@@ -123,7 +123,7 @@ Workflow by @leolabs_org</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.1</string>
+	<string>[version]</string>
 	<key>webaddress</key>
 	<string>https://leolabs.org</string>
 </dict>

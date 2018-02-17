@@ -1,11 +1,10 @@
-os: osx
 language: python
 python:
     - "2.7"
 
 install: ./setup.sh
 script: true
-before_deploy: plutil -replace version -string "$TRAVIS_BRANCH-$TRAVIS_BUILD_NUMBER" info.plist && zip -rv - *
+before_deploy: sed -i.bak 's/\[version\]/'"$TRAVIS_BRANCH-$TRAVIS_COMMIT"'/g' info.plist && zip -rv gitmoji.alfredworkflow *
 
 deploy:
   provider: releases
