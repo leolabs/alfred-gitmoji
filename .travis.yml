@@ -1,10 +1,11 @@
+os: osx
 language: python
 python:
     - "2.7"
 
 install: ./setup.sh
 script: true
-before_deploy: zip -rv - *
+before_deploy: plutil -replace version -string "$TRAVIS_BRANCH-$TRAVIS_BUILD_NUMBER" info.plist && zip -rv - *
 
 deploy:
   provider: releases
