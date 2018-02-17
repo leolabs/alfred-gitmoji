@@ -20,8 +20,20 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B491F830-2110-49B7-8499-164C3002C042</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Only copy to clipboard</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>B3FCC411-A44D-485C-BBFB-1E5734C43FC8</key>
+		<array/>
+		<key>B491F830-2110-49B7-8499-164C3002C042</key>
 		<array/>
 	</dict>
 	<key>createdby</key>
@@ -38,11 +50,11 @@
 			<key>config</key>
 			<dict>
 				<key>autopaste</key>
-				<false/>
+				<true/>
 				<key>clipboardtext</key>
-				<string>{query}</string>
+				<string>{query} </string>
 				<key>transient</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
@@ -98,6 +110,23 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>B491F830-2110-49B7-8499-164C3002C042</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>This workflow enables you to access the gitmoji database and copy relevant emojis to your clipboard.
@@ -110,20 +139,27 @@ Workflow by @leolabs_org</string>
 		<key>9B7FE8AC-6582-4825-917E-92D0E0291CC1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>110</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>370</integer>
+			<integer>20</integer>
 		</dict>
 		<key>B3FCC411-A44D-485C-BBFB-1E5734C43FC8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>340</integer>
+			<integer>250</integer>
 			<key>ypos</key>
-			<integer>370</integer>
+			<integer>20</integer>
+		</dict>
+		<key>B491F830-2110-49B7-8499-164C3002C042</key>
+		<dict>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>150</integer>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>[version]</string>
+	<string>1.1</string>
 	<key>webaddress</key>
 	<string>https://leolabs.org</string>
 </dict>
