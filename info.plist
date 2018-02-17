@@ -8,19 +8,6 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>1036C2EC-E5EE-4DCF-8E2F-A70CBCD3F717</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C11E5E0B-DDEE-417A-9559-8BF39D5B83F6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>9B7FE8AC-6582-4825-917E-92D0E0291CC1</key>
 		<array>
 			<dict>
@@ -34,19 +21,8 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C136FFEF-1AF8-41ED-BC4D-27CF2166EA4D</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1036C2EC-E5EE-4DCF-8E2F-A70CBCD3F717</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<key>B3FCC411-A44D-485C-BBFB-1E5734C43FC8</key>
+		<array/>
 	</dict>
 	<key>createdby</key>
 	<string>Leo Bernard</string>
@@ -58,77 +34,6 @@
 	<string>Gitmoji</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Gitmoji ⚡️</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>C11E5E0B-DDEE-417A-9559-8BF39D5B83F6</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>gm update</string>
-				<key>subtext</key>
-				<string>Downloads newest dataset from GitHub</string>
-				<key>text</key>
-				<string>Update gitmoji database</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>C136FFEF-1AF8-41ED-BC4D-27CF2166EA4D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>curl https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json &gt; gitmojis.json
-
-if test "$?" != "0"; then
-	echo "Updating the gitmoji database failed (curl command failed with: $res) 😕"
-else
-	echo "The gitmoji database was updated successfully 🎉"
-fi</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>1036C2EC-E5EE-4DCF-8E2F-A70CBCD3F717</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -176,13 +81,13 @@ fi</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>gitmoji.py</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
 				<string>GitMoji</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>8</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -202,13 +107,6 @@ The database can be found here: https://gitmoji.carloscuesta.me/
 Workflow by @leolabs_org</string>
 	<key>uidata</key>
 	<dict>
-		<key>1036C2EC-E5EE-4DCF-8E2F-A70CBCD3F717</key>
-		<dict>
-			<key>xpos</key>
-			<integer>340</integer>
-			<key>ypos</key>
-			<integer>240</integer>
-		</dict>
 		<key>9B7FE8AC-6582-4825-917E-92D0E0291CC1</key>
 		<dict>
 			<key>xpos</key>
@@ -223,23 +121,9 @@ Workflow by @leolabs_org</string>
 			<key>ypos</key>
 			<integer>370</integer>
 		</dict>
-		<key>C11E5E0B-DDEE-417A-9559-8BF39D5B83F6</key>
-		<dict>
-			<key>xpos</key>
-			<integer>510</integer>
-			<key>ypos</key>
-			<integer>240</integer>
-		</dict>
-		<key>C136FFEF-1AF8-41ED-BC4D-27CF2166EA4D</key>
-		<dict>
-			<key>xpos</key>
-			<integer>110</integer>
-			<key>ypos</key>
-			<integer>240</integer>
-		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>webaddress</key>
 	<string>https://leolabs.org</string>
 </dict>
