@@ -109,3 +109,4 @@ venv.bak/
 workflow/
 .idea/
 Alfred_Workflow-*
+*.bak
