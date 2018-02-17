@@ -1,0 +1,15 @@
+language: python
+python:
+    - "2.7"
+
+install: ./setup.sh
+before_deploy: zip -rv - *
+
+deploy:
+  provider: releases
+  api_key:
+    secure: $GITHUB_TOKEN
+  file: gitmoji.alfredworkflow
+  skip_cleanup: true
+  on:
+    tags: true
