@@ -5,7 +5,7 @@
 Search for [gitmoji](https://gitmoji.carloscuesta.me/) using
 [Alfred](https://www.alfredapp.com/) and copy them to the clipboard easily.
 
-![Demo](https://i.imgur.com/CLMHDhE.gif)
+![Demo](https://i.imgur.com/ADdea9w.gif)
 
 ## Installation
 You can download the latest version [here](https://github.com/leolabs/alfred-gitmoji/releases/latest).
