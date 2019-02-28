@@ -32,7 +32,7 @@ def main(wf):
 
     for emoji in data['gitmojis']:
         wf.add_item(
-            title=emoji['emoji'] + ' ' + emoji['code'],
+            title=emoji['code'],
             subtitle=emoji['description'],
             valid=True,
             icon=fetch_icon(wf, emoji['emoji']),
