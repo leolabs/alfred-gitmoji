@@ -70,7 +70,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>getting icons...</string>
+				<string>getting icons... (this can take a while)</string>
 				<key>script</key>
 				<string>chmod +x jq &amp;&amp; cat gitmojis.json | ./jq --raw-output '{items: [.gitmojis | .[] | {emoji: .emoji, code: .code, title: (.emoji + " " + .code), subtitle: .description, match: (.description + " " + .name), arg: .code, text: {copy: .code, largetype: .code}}]}'</string>
 				<key>scriptargtype</key>
