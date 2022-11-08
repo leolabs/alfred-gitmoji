@@ -1,5 +1,7 @@
 # Gitmoji workflow for Alfred
 
+## This project has been deprecated since newer versions of macOS don't offer support for Python 2 anymore. You can find an alternative [here](https://github.com/techouse/alfred-gitmoji).
+
 [![Build Status](https://travis-ci.org/leolabs/alfred-gitmoji.svg?branch=master)](https://travis-ci.org/leolabs/alfred-gitmoji)
 
 Search for [gitmoji](https://gitmoji.carloscuesta.me/) using
